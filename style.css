@@ -46,16 +46,26 @@ h1 {
 .shark {
   position: absolute;
   width: 8rem;
+  animation: swim linear infinite;
+}
+
+.shark img {
+  display: block;
+  width: 100%;
   height: auto;
   border-radius: 8px;
-  opacity: 0.5;
+  opacity: 0.55;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  animation: swim linear infinite;
+  animation: bob ease-in-out infinite alternate;
 }
 
 .shark-1 {
   top: 15%;
   animation-duration: 22s;
+}
+
+.shark-1 img {
+  animation-duration: 2.6s;
 }
 
 .shark-2 {
@@ -65,11 +75,33 @@ h1 {
   width: 5.5rem;
 }
 
+.shark-2 img {
+  animation-duration: 1.9s;
+  animation-delay: -1s;
+}
+
 .shark-3 {
   top: 80%;
   animation-duration: 18s;
   animation-delay: -4s;
   width: 9rem;
+}
+
+.shark-3 img {
+  animation-duration: 3.1s;
+  animation-delay: -2s;
+}
+
+@keyframes bob {
+  0% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(6px) rotate(-2deg);
+  }
 }
 
 @keyframes swim {
