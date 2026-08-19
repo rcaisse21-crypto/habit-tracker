@@ -45,28 +45,31 @@ h1 {
 
 .shark {
   position: absolute;
-  font-size: 2.5rem;
-  opacity: 0.55;
+  width: 8rem;
+  height: auto;
+  border-radius: 8px;
+  opacity: 0.5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   animation: swim linear infinite;
 }
 
 .shark-1 {
   top: 15%;
-  animation-duration: 18s;
+  animation-duration: 22s;
 }
 
 .shark-2 {
   top: 55%;
-  animation-duration: 24s;
-  animation-delay: -6s;
-  font-size: 1.8rem;
+  animation-duration: 28s;
+  animation-delay: -8s;
+  width: 5.5rem;
 }
 
 .shark-3 {
   top: 80%;
-  animation-duration: 14s;
-  animation-delay: -3s;
-  font-size: 3rem;
+  animation-duration: 18s;
+  animation-delay: -4s;
+  width: 9rem;
 }
 
 @keyframes swim {
