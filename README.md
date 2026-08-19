@@ -20,4 +20,4 @@ Shark photos in `images/` are public domain, sourced from Wikimedia Commons:
 
 - [Six-gill shark](https://commons.wikimedia.org/wiki/File:Six-gill_shark.jpg) — NOAA, public domain
 - [Pocket shark](https://commons.wikimedia.org/wiki/File:Pocket_shark_noaa_1.jpg) — J. Wicker/NOAA, public domain
-- [Great white shark](https://commons.wikimedia.org/wiki/File:The-Great-White-Shark.png) — CC0
+- [Whitetip reef shark](https://commons.wikimedia.org/wiki/File:Triaenodon_obesus_whitetip_reef_shark.JPG) — David Burdick/NOAA, public domain (resized for web use)
