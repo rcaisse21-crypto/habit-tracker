@@ -49,47 +49,89 @@ h1 {
   animation: swim linear infinite;
 }
 
-.shark img {
+.shark-svg {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  opacity: 0.55;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0.6;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
   animation: bob ease-in-out infinite alternate;
+}
+
+.shark-svg .body {
+  fill: #475569;
+}
+
+.shark-svg .belly {
+  fill: #cbd5e1;
+}
+
+.shark-svg .fin {
+  fill: #334155;
+}
+
+.shark-svg .gill,
+.shark-svg .mouth {
+  fill: none;
+  stroke: #1e293b;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.shark-svg .eye {
+  fill: #0f172a;
+}
+
+.shark-svg .tail {
+  fill: #334155;
+  transform-box: fill-box;
+  transform-origin: 100% 50%;
+  animation: tail-swish ease-in-out infinite alternate;
 }
 
 .shark-1 {
   top: 15%;
-  animation-duration: 22s;
+  animation-duration: 20s;
 }
 
-.shark-1 img {
+.shark-1 .shark-svg {
   animation-duration: 2.6s;
+}
+
+.shark-1 .tail {
+  animation-duration: 0.6s;
 }
 
 .shark-2 {
   top: 55%;
-  animation-duration: 28s;
+  animation-duration: 26s;
   animation-delay: -8s;
   width: 5.5rem;
 }
 
-.shark-2 img {
+.shark-2 .shark-svg {
   animation-duration: 1.9s;
   animation-delay: -1s;
 }
 
+.shark-2 .tail {
+  animation-duration: 0.45s;
+}
+
 .shark-3 {
   top: 80%;
-  animation-duration: 18s;
+  animation-duration: 16s;
   animation-delay: -4s;
   width: 9rem;
 }
 
-.shark-3 img {
+.shark-3 .shark-svg {
   animation-duration: 3.1s;
   animation-delay: -2s;
+}
+
+.shark-3 .tail {
+  animation-duration: 0.7s;
 }
 
 @keyframes bob {
@@ -104,12 +146,22 @@ h1 {
   }
 }
 
+@keyframes tail-swish {
+  0% {
+    transform: rotate(-18deg);
+  }
+  100% {
+    transform: rotate(18deg);
+  }
+}
+
 @keyframes swim {
-  0% { left: -10%; transform: scaleX(-1); }
-  49.9% { transform: scaleX(-1); }
-  50% { left: 110%; transform: scaleX(1); }
-  99.9% { transform: scaleX(1); }
-  100% { left: -10%; transform: scaleX(-1); }
+  0% {
+    left: -15%;
+  }
+  100% {
+    left: 105%;
+  }
 }
 
 #habit-form {
